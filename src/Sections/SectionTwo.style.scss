@@ -1,0 +1,83 @@
+.s2 {
+  // ALL
+  .schoolBox,
+  .universityBox,
+  .webdevBox {
+    // border: 1px solid red;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    opacity: 0;
+
+    .svg-box {
+      width: 55%;
+      // padding-left: 5%;
+      position: absolute;
+
+      z-index: -1;
+      .svg1,
+      .svg2,
+      .svg3 {
+        width: 100%;
+      }
+    }
+
+    .image-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 50%;
+      padding-right: 5%;
+      img,
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .show {
+    opacity: 1 !important;
+  }
+
+ 
+
+  // SCHOOL
+  .schoolBox {
+    justify-content: flex-end;
+    .svg-box {
+      top: 0;
+      left: 12%;
+      .svg1 {
+      }
+    }
+  }
+
+  //UNIVERSITY
+  .universityBox {
+    justify-content: flex-start;
+
+    .image-box {
+      img {
+        width: 50%;
+      }
+    }
+    .svg-box {
+      top: 0;
+      left: 30%;
+      .svg2 {
+      }
+    }
+  }
+
+  //WEBDEV
+  .webdevBox {
+    justify-content: flex-end;
+    .svg-box {
+      left: 5%;
+      .svg3 {
+      }
+    }
+  }
+}

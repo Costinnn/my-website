@@ -1,0 +1,22 @@
+.navbar{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+
+    ul{
+        text-align: right;
+
+        li{
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 5px 10px 5px 10px;
+
+            img{
+                width: 30px;
+            }
+        }
+    }
+}

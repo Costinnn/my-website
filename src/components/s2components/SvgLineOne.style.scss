@@ -1,0 +1,18 @@
+.svg1 {
+  .path1 {
+    stroke-dasharray: 3156.384765625 3156.384765625;
+  }
+
+  .animation {
+    animation: line1 2.5s linear;
+  }
+}
+@keyframes line1 {
+  from {
+    stroke-dasharray: 3156.384765625 3156.384765625;
+    stroke-dashoffset: 3156.384765625;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
