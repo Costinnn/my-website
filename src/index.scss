@@ -1,6 +1,7 @@
 /*  Website color pallete
 
     Eerie black  - #1C1F21
+    Light eerie black - #2B2F32
     Cadet Grey   - #919BA1
     Cultured     - #F4F5F6
     Honey yellow - #F6AE2D
@@ -35,4 +36,6 @@ body {
 .container {
   width: calc(100vw - (100vw - 100%));
   max-width: 1440px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
