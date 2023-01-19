@@ -19,7 +19,7 @@ const SectionOne = () => {
   };
 
   return (
-    <div className="container s1">
+    <div className="container s1" id="about">
       <div className="logo" onClick={handleLogo}>
         {!activeLogo && <img src={sleepy} alt="pikachu" />}
         {activeLogo && <img src={active} alt="pikachu" />}

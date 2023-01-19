@@ -26,7 +26,7 @@ const SectionTwo = () => {
   });
 
   return (
-    <div className="container s2">
+    <div className="container s2" id="journey">
       <div ref={ref1} className={`schoolBox ${inView1 ? "show" : ""}`}>
         <div className="svg-box">
           <SvgLineOne />

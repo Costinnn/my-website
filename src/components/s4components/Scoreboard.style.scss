@@ -1,0 +1,39 @@
+.scoreboard {
+  align-self: flex-start;
+
+  p {
+    font-family: "Rubik Mono One", sans-serif;
+  }
+
+  > h2 {
+    margin-top: 70px;
+    color: #f6ae2d;
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 2rem;
+  }
+  .players {
+    display: flex;
+    flex-direction: column;
+
+    .header,
+    .player {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px 0 15px;
+    }
+
+    .header {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #f6ae2d;
+      > p {
+        font-size: 1.3rem;
+      }
+    }
+
+    .player{
+      margin-top: 5px;
+    }
+  }
+}

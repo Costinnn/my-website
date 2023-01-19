@@ -1,18 +1,25 @@
-import SectionOne from './Sections/SectionOne';
-import SectionTwo from './Sections/SectionTwo';
-import SectionThree from './Sections/SectionThree';
-import SectionFour from './Sections/SectionFour';
+import SectionOne from "./Sections/SectionOne";
+import SectionTwo from "./Sections/SectionTwo";
+import SectionThree from "./Sections/SectionThree";
+import SectionFour from "./Sections/SectionFour";
 
-import './App.scss';
+import { useAuthContext } from "./hooks/useAuthContext";
 
+import "./App.scss";
 
 function App() {
+  const { authReady, user } = useAuthContext();
+
   return (
     <div className="App">
-      <SectionOne/>
-      <SectionTwo/>
-      <SectionThree/>
-      <SectionFour/>
+      {authReady && (
+        <>
+          <SectionOne />
+          <SectionTwo />
+          <SectionThree />
+          <SectionFour />
+        </>
+      )}
     </div>
   );
 }

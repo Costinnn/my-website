@@ -6,7 +6,7 @@ import PROJECTS_DATA from "../assets/s3/data/PROJECTS_DATA";
 
 const SectionThree = () => {
   return (
-    <div className="container s3">
+    <div className="container s3" id="projects">
       {PROJECTS_DATA.map((item) => {
         return (
           <ProjectDisplayTemplate
