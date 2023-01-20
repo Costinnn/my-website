@@ -11,24 +11,35 @@ const Navbar = () => {
     <div className="navbar">
       <ul>
         <li>
-          <a href="#about">About</a>
-          <img src={aboutIcon} alt="icon" />
+          <a href="#about">
+            {" "}
+            <span>About</span>
+            <img src={aboutIcon} alt="icon" />
+          </a>
         </li>
         <li>
-          <a href="#journey">Journey</a>
-          <img src={journeyIcon} alt="icon" />
+          <a href="#journey">
+            <span>Journey</span>
+            <img src={journeyIcon} alt="icon" />
+          </a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
-          <img src={projectsIcon} alt="icon" />
+          <a href="#projects">
+            <span>Projects</span>
+            <img src={projectsIcon} alt="icon" />
+          </a>
         </li>
         <li>
-          <a href="#play">Play</a>
-          <img src={playIcon} alt="icon" />
+          <a href="#play">
+            <span>Play</span>
+            <img src={playIcon} alt="icon" />
+          </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
-          <img src={contactIcon} alt="icon" />
+          <a href="#contact">
+            <span>Contact</span>
+            <img src={contactIcon} alt="icon" />
+          </a>
         </li>
       </ul>
     </div>

@@ -39,3 +39,10 @@ body {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@media(max-width:650px){
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

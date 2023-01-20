@@ -22,3 +22,15 @@
     align-self: flex-end;
   }
 }
+
+@media (max-width: 1000px) {
+  .s3 {
+    align-items: center;
+    .project-box:nth-child(2),
+    .project-box:nth-child(4),
+    .project-box:nth-child(6),
+    .project-box:nth-child(8) {
+      align-self: center;
+    }
+  }
+}

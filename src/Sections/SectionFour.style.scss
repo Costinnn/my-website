@@ -5,7 +5,7 @@
   position: relative;
 
   .game {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +58,44 @@
       >span{
         font-family: "Rubik Mono One", sans-serif;
         font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media(max-width:1000px){
+  .s4{
+    .game{
+      .card-grid{
+        margin-top: 10px;
+        width: 590px;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media(max-width:900px){
+  .s4{
+    flex-direction: column;
+    .game{
+      .card-grid{
+        width: 590px;
+      }
+    }
+  }
+}
+
+@media(max-width:630px){
+  .s4{
+    .game{
+      button{
+        font-size: 2rem;
+        padding: 5px 30px 5px 30px;
+      }
+      .card-grid{
+        width: 100%;
+        gap: 5px;
       }
     }
   }

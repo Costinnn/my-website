@@ -37,3 +37,13 @@
     }
   }
 }
+
+@media(max-width:900px){
+.scoreboard{
+  align-self: center;
+
+  >h2{
+    margin-top: 10px;
+  }
+}
+}

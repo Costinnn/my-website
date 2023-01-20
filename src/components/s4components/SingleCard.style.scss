@@ -1,5 +1,6 @@
 .card {
   position: relative;
+  text-align: center;
   img {
     width: 150px;
   }
@@ -28,6 +29,30 @@
     .back {
       transform: rotateY(90deg);
       transition-delay: 0s;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    img {
+      width: 130px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .card {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    img {
+      width: 100%;
     }
   }
 }

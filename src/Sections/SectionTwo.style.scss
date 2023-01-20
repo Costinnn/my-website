@@ -11,9 +11,7 @@
 
     .svg-box {
       width: 55%;
-      // padding-left: 5%;
       position: absolute;
-
       z-index: -1;
       .svg1,
       .svg2,
@@ -41,16 +39,12 @@
     opacity: 1 !important;
   }
 
- 
-
   // SCHOOL
   .schoolBox {
     justify-content: flex-end;
     .svg-box {
       top: 0;
       left: 12%;
-      .svg1 {
-      }
     }
   }
 
@@ -66,8 +60,6 @@
     .svg-box {
       top: 0;
       left: 30%;
-      .svg2 {
-      }
     }
   }
 
@@ -76,7 +68,46 @@
     justify-content: flex-end;
     .svg-box {
       left: 5%;
-      .svg3 {
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .schoolBox,
+    .universityBox,
+    .webdevBox {
+      .image-box {
+        width: 60%;
+        padding-right: 0;
+        p {
+          width: 110%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 860px) {
+    .schoolBox,
+    .universityBox,
+    .webdevBox {
+      .svg-box {
+        width: 60%;
+      }
+    }
+  }
+
+  @media (max-width: 770px) {
+    .schoolBox,
+    .universityBox,
+    .webdevBox {
+      .svg-box {
+        width: 70%;
+      }
+    }
+
+    .universityBox {
+      .svg-box {
+        top: 30px;
+        left: 20%;
       }
     }
   }

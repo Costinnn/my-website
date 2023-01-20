@@ -139,21 +139,6 @@ const SectionFour = () => {
       ) : (
         ""
       )}
-      <div className="game">
-        <button onClick={shuffleCards}>Play again</button>
-        <p>Your current score: {currentScore}</p>
-        <div className="card-grid">
-          {cards.map((card) => (
-            <SingleCard
-              card={card}
-              key={card.id}
-              handleChoice={handleChoice}
-              flipped={card === choiceOne || card === choiceTwo || card.matched}
-              disabled={disabled}
-            />
-          ))}
-        </div>
-      </div>
       <div className="scoreboard">
         <Scoreboard />
         <div className="log-sign-buttons">
@@ -188,6 +173,21 @@ const SectionFour = () => {
         <p>
           Playing as <span> {user ? user.displayName : "guest"}</span>
         </p>
+      </div>
+      <div className="game">
+        <button onClick={shuffleCards}>Play again</button>
+        <p>Your current score: {currentScore}</p>
+        <div className="card-grid">
+          {cards.map((card) => (
+            <SingleCard
+              card={card}
+              key={card.id}
+              handleChoice={handleChoice}
+              flipped={card === choiceOne || card === choiceTwo || card.matched}
+              disabled={disabled}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
