@@ -7,48 +7,34 @@
   // FRONT CARD
   .front {
     position: absolute;
-    transform: rotateY(90deg);
-    transition: all ease-in 0.2s;
+    // transform: rotateY(90deg);
+    // transition: all ease-in 0.2s;
+    display: none;
 
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: rotateY(90deg);
-    -webkit-transition: all ease-in 0.2s;
   }
   // FRONT CARD flipped
   .flipped {
     .front {
-      transform: rotateY(0deg);
-      transition-delay: 0.2s;
+      // transform: rotateY(0deg);
+      // transition-delay: 0.2s;
+      display: block;
 
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: rotateY(0deg);
-      -webkit-transition-delay: 0.2s;
     }
   }
 
   // BACK CARD
   .back {
-    transition: all ease-in 0.2s;
-    transition-delay: 0.2s;
-
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: all ease-in 0.2s;
-    -webkit-transition-delay: 0.2s;
+    // transition: all ease-in 0.2s;
+    // transition-delay: 0.2s;
+    display: block;
   }
 
   // BACK CARD flipped
   .flipped {
     .back {
-      transform: rotateY(90deg);
-      transition-delay: 0s;
-
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: rotateY(90deg);
-      -webkit-transition-delay: 0.2s;
+      // transform: rotateY(90deg);
+      // transition-delay: 0s;
+      display: none;
     }
   }
 }
