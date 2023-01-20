@@ -6,37 +6,37 @@
   }
   // FRONT CARD
   .front {
-    -webkit-transform: rotateY(90deg);
-    transform: rotateY(90deg);
-    position: absolute;
-    -webkit-transition: all ease-in 0.2s;
-    transition: all ease-in 0.2s;
+    // -webkit-transform: rotateY(90deg);
+    // transform: rotateY(90deg);
+    // position: absolute;
+    // -webkit-transition: all ease-in 0.2s;
+    // transition: all ease-in 0.2s;
   }
   // FRONT CARD flipped
   .flipped {
     .front {
-      -webkit-transform: rotateY(0deg);
-      transform: rotateY(0deg);
-      -webkit-transition-delay: 0.2s;
-      transition-delay: 0.2s;
+      // -webkit-transform: rotateY(0deg);
+      // transform: rotateY(0deg);
+      // -webkit-transition-delay: 0.2s;
+      // transition-delay: 0.2s;
     }
   }
 
   // BACK CARD
   .back {
-    -webkit-transition: all ease-in 0.2s;
-    transition: all ease-in 0.2s;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
+    // -webkit-transition: all ease-in 0.2s;
+    // transition: all ease-in 0.2s;
+    // -webkit-transition-delay: 0.2s;
+    // transition-delay: 0.2s;
   }
 
   // BACK CARD flipped
   .flipped {
     .back {
-      -webkit-transform: rotateY(90deg);
-      transform: rotateY(90deg);
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s;
+      // -webkit-transform: rotateY(90deg);
+      // transform: rotateY(90deg);
+      // -webkit-transition-delay: 0s;
+      // transition-delay: 0s;
     }
   }
 }
