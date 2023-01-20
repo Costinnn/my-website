@@ -15,7 +15,7 @@ function App() {
       {authReady && (
         <>
           <SectionOne />
-           {/* <SectionTwo /> */}
+           <SectionTwo />
           <SectionThree />
           <SectionFour />
         </>

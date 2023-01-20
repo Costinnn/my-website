@@ -111,4 +111,31 @@
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .schoolBox,
+    .universityBox,
+    .webdevBox {
+      justify-content: center;
+      .svg-box {
+        display: none;
+      }
+
+      .image-box {
+        width: 100%;
+        > img {
+          width: 70%;
+        }
+        p {
+          width: 90%;
+        }
+      }
+
+      .image-box:nth-child(1) {
+        > img {
+          width: 45%;
+        }
+      }
+    }
+  }
 }

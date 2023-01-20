@@ -7,12 +7,14 @@
     text-align: right;
 
     li {
-      font-size: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 10px;
-      padding: 5px 10px 5px 10px;
+      a {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 5px 10px 5px 10px;
+      }
 
       img {
         width: 30px;
@@ -33,9 +35,10 @@
 
     ul {
       li {
-        margin-top: 5px;
-        font-size: 0.8rem;
         a {
+          margin-top: 5px;
+          gap: 0;
+          font-size: 0.8rem;
           width: 80%;
           display: flex;
           flex-direction: column;
