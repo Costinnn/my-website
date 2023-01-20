@@ -6,45 +6,49 @@
   }
   // FRONT CARD
   .front {
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: none;
     position: absolute;
-    // -webkit-transform: rotateY(90deg);
     transform: rotateY(90deg);
-    // -webkit-transition: all ease-in 0.2s;
     transition: all ease-in 0.2s;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: rotateY(90deg);
+    -webkit-transition: all ease-in 0.2s;
   }
   // FRONT CARD flipped
   .flipped {
     .front {
-      -webkit-perspective: 1000;
-      -webkit-backface-visibility: none;
-      // -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg);
-      // -webkit-transition-delay: 0.2s;
       transition-delay: 0.2s;
+
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: rotateY(0deg);
+      -webkit-transition-delay: 0.2s;
     }
   }
 
   // BACK CARD
   .back {
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: none;
-    // -webkit-transition: all ease-in 0.2s;
     transition: all ease-in 0.2s;
-    // -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all ease-in 0.2s;
+    -webkit-transition-delay: 0.2s;
   }
 
   // BACK CARD flipped
   .flipped {
     .back {
-      -webkit-perspective: 1000;
-      -webkit-backface-visibility: none;
-      // -webkit-transform: rotateY(90deg);
       transform: rotateY(90deg);
-      // -webkit-transition-delay: 0s;
       transition-delay: 0s;
+
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: rotateY(90deg);
+      -webkit-transition-delay: 0.2s;
     }
   }
 }
