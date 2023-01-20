@@ -1,39 +1,37 @@
 .card {
-  position: relative;
+  // position: relative;
   text-align: center;
   img {
     width: 150px;
   }
   // FRONT CARD
   .front {
-    position: absolute;
-    // transform: rotateY(90deg);
-    // transition: all ease-in 0.2s;
+    //  position: absolute;
+    //  transform: rotateY(90deg);
+    //  transition: all ease-in 0.2s;
     display: none;
-
   }
   // FRONT CARD flipped
   .flipped {
     .front {
-      // transform: rotateY(0deg);
-      // transition-delay: 0.2s;
-      display: block;
-
+      //  transform: rotateY(0deg);
+      //  transition-delay: 0.2s;
+      display: inline;
     }
   }
 
   // BACK CARD
   .back {
-    // transition: all ease-in 0.2s;
-    // transition-delay: 0.2s;
-    display: block;
+    //  transition: all ease-in 0.2s;
+    //  transition-delay: 0.2s;
+    display: inline;
   }
 
   // BACK CARD flipped
   .flipped {
     .back {
-      // transform: rotateY(90deg);
-      // transition-delay: 0s;
+      //  transform: rotateY(90deg);
+      //  transition-delay: 0s;
       display: none;
     }
   }
