@@ -8,14 +8,14 @@ import { useAuthContext } from "./hooks/useAuthContext";
 import "./App.scss";
 
 function App() {
-  const { authReady, user } = useAuthContext();
+  const { authReady } = useAuthContext();
 
   return (
     <div className="App">
       {authReady && (
         <>
           <SectionOne />
-           <SectionTwo />
+          <SectionTwo />
           <SectionThree />
           <SectionFour />
         </>

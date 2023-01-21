@@ -2,7 +2,6 @@ import "./SvgLineOne.style.scss";
 
 import { useInView } from "react-intersection-observer";
 
-
 const SvgLineOne = () => {
   const { ref, inView } = useInView({
     threshold: 0.3,

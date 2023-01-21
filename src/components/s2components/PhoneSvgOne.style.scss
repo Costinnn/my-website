@@ -1,0 +1,21 @@
+.phone-svg1 {
+    .phone-path1 {
+      stroke-dasharray: 1326.98779296875 ;
+      stroke-dashoffset: 0;
+      opacity: 0;
+    }
+
+    .phone-animation{
+      animation: phoneline1 2.5s linear;
+      opacity: 1;
+    }
+  }
+  @keyframes phoneline1 {
+    from {
+      stroke-dasharray: 1326.98779296875 1326.98779296875;
+      stroke-dashoffset: 1326.98779296875;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

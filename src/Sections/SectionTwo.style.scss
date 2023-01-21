@@ -112,13 +112,31 @@
     }
   }
 
+  @media (min-width: 600px) {
+    .schoolBox,
+    .universityBox,
+    .webdevBox {
+      .svg-box-phone {
+        display: none;
+      }
+    }
+  }
+
   @media (max-width: 600px) {
     .schoolBox,
     .universityBox,
     .webdevBox {
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
       .svg-box {
         display: none;
+      }
+      .svg-box-phone {
+        width: 80%;
+        top: 100px;
+        position: absolute;
+        z-index: -1;
       }
 
       .image-box {
@@ -136,6 +154,23 @@
           width: 45%;
         }
       }
+    }
+
+    .universityBox {
+      margin-top: 200px;
+      .svg-box-phone {
+        top: 130px;
+      }
+    }
+
+    .webdevBox{
+      margin-top: 200px;
+    }
+  }
+
+  @media (max-width: 440px){
+    .webdevBox{
+      margin-top: 80px;
     }
   }
 }

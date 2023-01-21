@@ -4,6 +4,8 @@ import { useInView } from "react-intersection-observer";
 
 import SvgLineOne from "../components/s2components/SvgLineOne";
 import SvgLineTwo from "../components/s2components/SvgLineTwo";
+import PhoneSvgOne from "../components/s2components/PhoneSvgOne";
+import PhoneSvgTwo from "../components/s2components/PhoneSvgTwo";
 
 import school from "../assets/s2/school.png";
 import university from "../assets/s2/university.png";
@@ -40,6 +42,9 @@ const SectionTwo = () => {
             helped me develop both intellectually and personally.
           </p>
         </div>
+        <div className="svg-box-phone">
+          <PhoneSvgOne />
+        </div>
       </div>
 
       <div ref={ref2} className={`universityBox ${inView2 ? "show" : ""}`}>
@@ -57,6 +62,9 @@ const SectionTwo = () => {
         </div>
         <div className="svg-box">
           <SvgLineTwo />
+        </div>
+        <div className="svg-box-phone">
+          <PhoneSvgTwo />
         </div>
       </div>
 
