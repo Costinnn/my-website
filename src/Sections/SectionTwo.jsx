@@ -69,7 +69,7 @@ const SectionTwo = () => {
       </div>
 
       <div ref={ref3} className={`webdevBox ${inView3 ? "show" : ""}`}>
-        <div className="svg-box">SVG</div>
+        <div className="svg-box"></div>
         <div className="image-box">
           <img src={webdev} alt="" />
           <p>

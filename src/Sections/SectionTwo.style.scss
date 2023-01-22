@@ -76,12 +76,15 @@
     .universityBox,
     .webdevBox {
       .image-box {
-        width: 60%;
+        width: 65%;
         padding-right: 0;
         p {
-          width: 110%;
+          width: 100%;
         }
       }
+    }
+    .webdevBox{
+      margin-top: 0px;
     }
   }
 
@@ -93,6 +96,7 @@
         width: 60%;
       }
     }
+  
   }
 
   @media (max-width: 770px) {
@@ -110,6 +114,8 @@
         left: 20%;
       }
     }
+
+  
   }
 
   @media (min-width: 600px) {

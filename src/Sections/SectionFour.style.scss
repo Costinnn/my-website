@@ -1,102 +1,148 @@
 .s4 {
   margin-top: 50px;
   min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
 
-  .game {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .card-grid {
-      margin-top: 20px;
-      width: 700px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 20px;
-    }
+  .s4-svg {
+    text-align: center;
+    svg {
+      width: 100%;
+      max-width: 800px;
+      .svg-elem-1 {
+        stroke-dashoffset: 2931.474853515625px;
+        stroke-dasharray: 2931.474853515625px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 3s
+            cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s,
+          fill 1.2s cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.8s;
+        transition: stroke-dashoffset 3s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+            0s,
+          fill 1.2s cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.8s;
+      }
 
-    button {
-      color: #1c1f21;
-      background-color: #f6ae2d;
-      border: none;
-      font-family: "Rubik Mono One", sans-serif;
-      font-size: 3rem;
-      line-height: 50px;
-      padding: 5px 50px 5px 50px;
-      border-radius: 10px;
-    }
-
-    >p{
-      margin-top: 20px;
-      font-family: 'Rubik Mono One', sans-serif;
+      .svg-active {
+        stroke-dashoffset: 0;
+        // fill: #2B2F32;
+        animation: svg-blink 4s infinite ease;
+      }
     }
   }
 
-  .scoreboard {
-    .log-sign-buttons{  
+  @keyframes svg-blink {
+    0% {
+      fill: #1c1f21;
+    }
+    40% {
+      fill: #2b2f32;
+    }
+    100% {
+      fill: #1c1f21;
+    }
+  }
+  .game-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    .game {
       margin-top: 30px;
       display: flex;
-      justify-content: space-around;
-      button{
-        background-color: #f6ae2d;
+      flex-direction: column;
+      align-items: center;
+
+      .card-grid {
+        margin-top: 20px;
+        width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+      }
+
+      button {
         color: #1c1f21;
-        font-family: "Rubik Mono One", sans-serif;
+        background-color: #f6ae2d;
         border: none;
-        width: 90px;
-        height: 30px;
-        border-radius: 2px;
-      }
-    }
-    >p{
-      margin-top: 10px;
-      text-align: center;
-      font-family: 'Kanit', sans-serif;
-      font-size: 1.2rem;
-      >span{
         font-family: "Rubik Mono One", sans-serif;
-        font-size: 1.2rem;
+        font-size: 3rem;
+        line-height: 50px;
+        padding: 5px 50px 5px 50px;
+        border-radius: 10px;
+      }
+
+      > p {
+        margin-top: 20px;
+        font-family: "Rubik Mono One", sans-serif;
       }
     }
-  }
-}
 
-@media(max-width:1000px){
-  .s4{
-    .game{
-      .card-grid{
+    .scoreboard {
+      .log-sign-buttons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        button {
+          background-color: #f6ae2d;
+          color: #1c1f21;
+          font-family: "Rubik Mono One", sans-serif;
+          border: none;
+          width: 90px;
+          height: 30px;
+          border-radius: 2px;
+        }
+      }
+      > p {
         margin-top: 10px;
-        width: 590px;
-        gap: 10px;
+        text-align: center;
+        font-family: "Kanit", sans-serif;
+        font-size: 1.2rem;
+        > span {
+          font-family: "Rubik Mono One", sans-serif;
+          font-size: 1.2rem;
+        }
       }
     }
   }
 }
 
-@media(max-width:900px){
-  .s4{
-    flex-direction: column;
-    .game{
-      .card-grid{
-        width: 590px;
+@media (max-width: 1000px) {
+  .s4 {
+    .game-box {
+      .game {
+        .card-grid {
+          margin-top: 10px;
+          width: 590px;
+          gap: 10px;
+        }
       }
     }
   }
 }
 
-@media(max-width:630px){
-  .s4{
-    .game{
-      button{
-        font-size: 2rem;
-        padding: 5px 30px 5px 30px;
+@media (max-width: 900px) {
+  .s4 {
+    .game-box {
+      flex-direction: column;
+      .game {
+        .card-grid {
+          width: 590px;
+        }
       }
-      .card-grid{
-        width: 100%;
-        gap: 5px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .s4 {
+    .game-box {
+      .game {
+        button {
+          font-size: 2rem;
+          padding: 5px 30px 5px 30px;
+        }
+        .card-grid {
+          width: 100%;
+          gap: 5px;
+        }
       }
     }
   }
