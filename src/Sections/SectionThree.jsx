@@ -21,7 +21,7 @@ const SectionThree = () => {
 
   const viewMore = () => {
     if (count === 3) {
-      setCount(8);
+      setCount(9);
     } else {
       setCount(3);
     }
@@ -31,8 +31,6 @@ const SectionThree = () => {
     <div className="container s3" ref={ref} id="projects">
       <div className="s3-svg">
         <svg
-          // width="326.8009948730469"
-          // height="85.7300033569336"
           viewBox="0 0 326.801 85.73"
           xmlns="http://www.w3.org/2000/svg"
         >

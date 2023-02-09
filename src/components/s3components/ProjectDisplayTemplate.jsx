@@ -20,9 +20,13 @@ const ProjectDisplayTemplate = ({
       <div className="back-box">
         <div className="left-side">
           <h3>INFO</h3>
-          <img src={githubIcon} alt="github" />
+          <a href={github} target="_blank" rel="noreferrer">
+            <img src={githubIcon} alt="github" />
+          </a>
           <br />
-          <img src={linkIcon} alt="link" />
+          <a href={link} target="_blank" rel="noreferrer">
+            <img src={linkIcon} alt="link" />
+          </a>
         </div>
         <div className="right-side">
           <h3>{title2}</h3> <p>{text}</p>

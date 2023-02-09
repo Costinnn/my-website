@@ -27,7 +27,8 @@
   .project-box:nth-child(2),
   .project-box:nth-child(4),
   .project-box:nth-child(6),
-  .project-box:nth-child(8) {
+  .project-box:nth-child(8),
+  .project-box:nth-child(10) {
     align-self: flex-end;
   }
 
@@ -49,7 +50,8 @@
     .project-box:nth-child(2),
     .project-box:nth-child(4),
     .project-box:nth-child(6),
-    .project-box:nth-child(8) {
+    .project-box:nth-child(8),
+    .project-box:nth-child(10) {
       align-self: center;
     }
 
