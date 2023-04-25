@@ -1,13 +1,14 @@
 import "./SectionThree.style.scss";
 
+import githubIcon from "../assets/s3/images/github.svg";
 import ProjectDisplayTemplate from "../components/s3components/ProjectDisplayTemplate";
 
 import PROJECTS_DATA from "../assets/s3/data/PROJECTS_DATA";
 
-import { useState } from "react";
+// import { useState } from "react";
 
-import upArrow from "../assets/s3/up-arrow.png";
-import downArrow from "../assets/s3/down-arrow.png";
+// import upArrow from "../assets/s3/up-arrow.png";
+// import downArrow from "../assets/s3/down-arrow.png";
 
 import { useInView } from "react-intersection-observer";
 
@@ -17,23 +18,20 @@ const SectionThree = () => {
     triggerOnce: true,
   });
 
-  const [count, setCount] = useState(3);
+  // const [count, setCount] = useState(3);
 
-  const viewMore = () => {
-    if (count === 3) {
-      setCount(9);
-    } else {
-      setCount(3);
-    }
-  };
+  // const viewMore = () => {
+  //   if (count === 3) {
+  //     setCount(9);
+  //   } else {
+  //     setCount(3);
+  //   }
+  // };
 
   return (
     <div className="container s3" ref={ref} id="projects">
       <div className="s3-svg">
-        <svg
-          viewBox="0 0 326.801 85.73"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg viewBox="0 0 326.801 85.73" xmlns="http://www.w3.org/2000/svg">
           <g
             id="svgGroup"
             strokeLinecap="round"
@@ -51,25 +49,36 @@ const SectionThree = () => {
           </g>
         </svg>
       </div>
-      {PROJECTS_DATA.map((item, index) => {
-        while (index < count) {
-          return (
-            <ProjectDisplayTemplate
-              key={item.title1}
-              github={item.github}
-              link={item.link}
-              title1={item.title1}
-              img={item.img}
-              title2={item.title2}
-              text={item.text}
-            />
-          );
-        }
+      {PROJECTS_DATA.map((item) => {
+        // while (index < count)
+        return (
+          <ProjectDisplayTemplate
+            key={item.title1}
+            github={item.github}
+            link={item.link}
+            title1={item.title1}
+            img={item.img}
+            title2={item.title2}
+            text={item.text}
+          />
+        );
       })}
-      <div className="expand" onClick={viewMore}>
+      {/* <div className="expand" onClick={viewMore}>
         <img src={count === 3 ? downArrow : upArrow} alt="icon" />
         <p>{count === 3 ? "more projects" : "less projects"}</p>
-      </div>
+      </div> */}
+      <p className="end-text">
+        These are only few of my projects, if you are interested, you can check out
+        more on my
+        <a href="https://github.com/Costinnn" target="_blank" rel="noreferrer">
+          &nbsp;
+          <img src={githubIcon} alt="github" /> GitHub&nbsp;
+        </a>
+        account, where I got into more detail about the projects and their
+        functionalities. <br /> <br />
+        Now... let's take a break and play a game, can you beat the scores on the
+        Scoreboard? Let's see!
+      </p>
     </div>
   );
 };

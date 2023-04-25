@@ -24,11 +24,7 @@
       }
     }
   }
-  .project-box:nth-child(2),
-  .project-box:nth-child(4),
-  .project-box:nth-child(6),
-  .project-box:nth-child(8),
-  .project-box:nth-child(10) {
+  .project-box:nth-of-type(3) {
     align-self: flex-end;
   }
 
@@ -42,16 +38,25 @@
       width: 100px;
     }
   }
+
+  .end-text {
+    margin: 20px auto 0 auto;
+    max-width: 500px;
+    text-align: center;
+    a {
+      color: #f26419;
+      font-size: 17px;
+      img {
+        width: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1000px) {
   .s3 {
     align-items: center;
-    .project-box:nth-child(2),
-    .project-box:nth-child(4),
-    .project-box:nth-child(6),
-    .project-box:nth-child(8),
-    .project-box:nth-child(10) {
+    .project-box:nth-of-type(3) {
       align-self: center;
     }
 
