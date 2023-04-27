@@ -7,6 +7,7 @@ import SvgLineTwo from "../components/s2components/SvgLineTwo";
 import PhoneSvgOne from "../components/s2components/PhoneSvgOne";
 import PhoneSvgTwo from "../components/s2components/PhoneSvgTwo";
 
+import journeyPika from "../assets/s2/journey.png";
 import school from "../assets/s2/school.png";
 import university from "../assets/s2/university.png";
 import webdev from "../assets/s2/webdev.gif";
@@ -29,6 +30,7 @@ const SectionTwo = () => {
 
   return (
     <div className="container s2" id="journey">
+      <img src={journeyPika} alt="pikachu" className="journey-pika"/>
       <div ref={ref1} className={`schoolBox ${inView1 ? "show" : ""}`}>
         <div className="svg-box">
           <SvgLineOne />

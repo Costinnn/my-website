@@ -1,5 +1,6 @@
 import "./SectionThree.style.scss";
 
+import projectsPika from "../assets/s3/projects.png";
 import githubIcon from "../assets/s3/images/github.svg";
 import ProjectDisplayTemplate from "../components/s3components/ProjectDisplayTemplate";
 
@@ -30,6 +31,7 @@ const SectionThree = () => {
 
   return (
     <div className="container s3" ref={ref} id="projects">
+      <img src={projectsPika} alt="" className="projects-pika" />
       <div className="s3-svg">
         <svg viewBox="0 0 326.801 85.73" xmlns="http://www.w3.org/2000/svg">
           <g
@@ -68,16 +70,16 @@ const SectionThree = () => {
         <p>{count === 3 ? "more projects" : "less projects"}</p>
       </div> */}
       <p className="end-text">
-        These are only few of my projects, if you are interested, you can check out
-        more on my
+        These are only few of my projects, if you are interested, you can check
+        out more on my
         <a href="https://github.com/Costinnn" target="_blank" rel="noreferrer">
           &nbsp;
           <img src={githubIcon} alt="github" /> GitHub&nbsp;
         </a>
         account, where I got into more detail about the projects and their
         functionalities. <br /> <br />
-        Now... let's take a break and play a game, can you beat the scores on the
-        Scoreboard? Let's see!
+        Now... let's take a break and play a game, can you beat the scores on
+        the Scoreboard? Let's see!
       </p>
     </div>
   );

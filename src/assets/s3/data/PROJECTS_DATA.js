@@ -9,7 +9,7 @@ const PROJECTS_DATA = [
     title1: "NATURAL STONE WEBSITE",
     img: p1,
     title2: "PRACTICING REAL LIFE REACT WEBSITE",
-    text: "The purpose of this project was to highlight the wide range of stone varieties and models. The end customer also wanted to focus on showing his work, so I had to deal with a lot of images. For this website I used React, optimized the images to .webp and did some SEO work.",
+    text: "The purpose of this project was to highlight the wide range of stone varieties and models. The customer also wanted to focus on showing his work, so I had to deal with a lot of images. For this website I used React, optimized the images to .webp and did some SEO work.",
   },
   {
     github: "https://github.com/Costinnn/shauz",

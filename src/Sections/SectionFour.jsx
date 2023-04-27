@@ -2,6 +2,7 @@ import "./SectionFour.style.scss";
 
 import { doc, getDoc } from "firebase/firestore";
 
+import gamePika from "../assets/s4/game.png";
 import CARD_IMAGES from "../assets/s4/data/CARD_IMAGES";
 import SingleCard from "../components/s4components/SingleCard";
 import Scoreboard from "../components/s4components/Scoreboard";
@@ -168,6 +169,7 @@ const SectionFour = () => {
           </g>
         </svg>
       </div>
+      <img src={gamePika} alt="" className="game-pika"/>
       <div className="game-box">
         <div className="scoreboard">
           <Scoreboard />

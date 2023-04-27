@@ -7,6 +7,7 @@ import "./SectionOne.style.scss";
 
 import portrait from "../assets/s1/portrait.png";
 import active from "../assets/s1/active.gif";
+import message from "../assets/s1/message.png";
 import sleepy from "../assets/s1/sleepy.gif";
 
 const SectionOne = () => {
@@ -23,6 +24,7 @@ const SectionOne = () => {
       <div className="logo" onClick={!activeLogo ? handleLogo : null}>
         {!activeLogo && <img src={sleepy} alt="pikachu" />}
         {activeLogo && <img src={active} alt="pikachu" />}
+        {activeLogo && <img className="message" src={message} alt="pikachu" />}
       </div>
       <div>
         <IconsSpin />
@@ -30,9 +32,9 @@ const SectionOne = () => {
           <p>Hello, my name is</p>
           <p className="name">Crauciuc Costin</p>
           <p className="text">
-            ... and I am driven day by day to build more complex and performand
+            ... and I am driven day by day to build more complex and performant
             web applications using amazing technologies. Speaking of which,
-            isn't it amazing what capacity the human mind has to create all this
+            isn't it amazing the human's mind capacity to create all this
             virtual applications that can make our lives feel like those of
             superheroes?
           </p>

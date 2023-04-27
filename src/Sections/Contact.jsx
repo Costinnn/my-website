@@ -1,6 +1,8 @@
 import emailjs from "@emailjs/browser";
 
 import { useState } from "react";
+import cvFile from "../assets/contact/ccc.pdf";
+import endPika from "../assets/contact/end.png";
 
 import "./Contact.scss";
 
@@ -37,45 +39,52 @@ const Contact = () => {
   };
 
   return (
-    <section className="container contact">
+    <section className="container contact" id="contact">
       <h1>CONTACT ME!</h1>
       <p>
         If you have an oportunity for me, and you think that I would be a good
         choice for it, please let me know. I will be happy to get involved,
         learn new things and create awesome web applications.
       </p>
-      <form onSubmit={handleSubmit}>
-        <input
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          type="text"
-          name=""
-          id=""
-          placeholder="Name"
-          required
-        />
-        <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          type="email"
-          name=""
-          id=""
-          placeholder="Email"
-          required
-        />
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          name="message"
-          id="message"
-          cols="20"
-          rows="10"
-          placeholder="Tell me more..."
-          required
-        ></textarea>
-        {feedback ? <p>{feedback}</p> : null}
-        <button>SEND MESSAGE</button>
-      </form>
+      <div>
+        <a href={cvFile} download="Crauciuc Costin CV" className="cv-download">
+          DOWNLOAD MY CV
+        </a>
+
+        <form onSubmit={handleSubmit}>
+          <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            type="text"
+            name=""
+            id=""
+            placeholder="Name"
+            required
+          />
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            name=""
+            id=""
+            placeholder="Email"
+            required
+          />
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            name="message"
+            id="message"
+            cols="20"
+            rows="10"
+            placeholder="Tell me more..."
+            required
+          ></textarea>
+          {feedback ? <p>{feedback}</p> : null}
+          <button>SEND MESSAGE</button>
+        </form>
+      </div>
+      <img src={endPika} alt="pikachu" className="end-pika"/>
     </section>
   );
 };
