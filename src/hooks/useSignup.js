@@ -37,7 +37,6 @@ export const useSignup = () => {
           email,
           password
         );
-
         await setDoc(doc(db, "players", displayName), {
           displayName: displayName,
           score: 0,
@@ -46,7 +45,6 @@ export const useSignup = () => {
         if (!response) {
           throw new Error("Could not complete auth");
         }
-
         //add displayName
         await updateProfile(auth.currentUser, { displayName: displayName });
 
@@ -60,11 +58,8 @@ export const useSignup = () => {
         setIsPending(false);
       }
     } catch (err) {
-      if (isCancelled) {
-        console.log(err.message);
-        setError(err.message);
-        setIsPending(false);
-      }
+      setError(err.message);
+      setIsPending(false);
     }
   };
 
