@@ -18,7 +18,6 @@ const LoginForm = ({ setIsLoginFormOn }) => {
   const handleClose = () => {
     setIsLoginFormOn(false);
   };
-
   return (
     <div className="input-container">
       <form onSubmit={handleSubmit} className="form-box">
@@ -27,6 +26,7 @@ const LoginForm = ({ setIsLoginFormOn }) => {
           <span>Email:</span>
           <input
             type="email"
+            id="email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
@@ -36,6 +36,7 @@ const LoginForm = ({ setIsLoginFormOn }) => {
           <span>Password:</span>
           <input
             type="password"
+            id="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />

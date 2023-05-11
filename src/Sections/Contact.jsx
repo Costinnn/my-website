@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 
 import { useState } from "react";
-import cvFile from "../assets/contact/ccc.pdf";
+import cvFile from "../assets/contact/resume.pdf";
 import endPika from "../assets/contact/end.png";
 
 import "./Contact.scss";

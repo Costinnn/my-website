@@ -27,6 +27,7 @@ const SignupForm = ({ setIsSignupFormOn }) => {
           <span>Email:</span>
           <input
             type="email"
+            id="email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
@@ -36,6 +37,7 @@ const SignupForm = ({ setIsSignupFormOn }) => {
           <span>Password:</span>
           <input
             type="password"
+            id="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />
@@ -45,6 +47,7 @@ const SignupForm = ({ setIsSignupFormOn }) => {
           <span>Display Name:</span>
           <input
             type="text"
+            id="name"
             onChange={(e) => setDisplayName(e.target.value)}
             value={displayName}
           />
