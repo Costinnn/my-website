@@ -4,6 +4,8 @@
 
 This project is meant to tell a story, in a funny and friendly way.
 
+You can visit it on [Costin's website](https://mywebsite-c.netlify.app/)
+
 ## Technologies
 **React**
 
