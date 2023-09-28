@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# My portfolio website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction - project's aim
 
-## Available Scripts
+This project is meant to tell a story, in a funny and friendly way.
 
-In the project directory, you can run:
+You can visit it on [Costin's website](https://mywebsite-c.netlify.app/)
 
-### `npm start`
+## Technologies
+**React**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**HTML & SCSS**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Firebase**
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I used firebase for authentication and user scores storage on the pokemon flipping game.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What I learned?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In general, I learnt how SVGs work and how to manipulate them. Also, the flipping game was another oportunity to learn and develop my mindset to be able to transform an idea into reality by javascript code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Functionalities
 
-### `npm run eject`
+A pokemon memory game, which gives you 10 points for finding 2 identical cards or substract 1 point if the second card selected doesn't match with the first one. The "PLAY AGAIN" button shuffles the cards but keeps the score, you can play as a guest or you can create an account and get displayed on the scoreboard. Can you beat those scores?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="https://github.com/Costinnn/my-website/assets/103998434/977eb374-8533-47ba-982f-d6e5fa44d247" width="80%"/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+SVG animations for svg lines or svg text.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img src="https://github.com/Costinnn/my-website/assets/103998434/7d8c0abc-f8ad-44b9-962a-1102532ac3b4" width="80%"/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
