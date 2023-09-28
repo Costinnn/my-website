@@ -84,7 +84,7 @@ const Contact = () => {
           <button>SEND MESSAGE</button>
         </form>
       </div>
-      <img src={endPika} alt="pikachu" className="end-pika"/>
+      <img src={endPika} alt="pikachu" className="end-pika" />
     </section>
   );
 };
