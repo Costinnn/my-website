@@ -2,15 +2,24 @@ import p1 from "../images/p1.png";
 import p2 from "../images/p2.png";
 import p3 from "../images/p3.png";
 import p4 from "../images/p4.png";
+import p5 from "../images/p5.png";
 
 const PROJECTS_DATA = [
   {
-    github: "https://github.com/Costinnn/Natural-stone-presentation-website-",
-    link: "https://ornamente-piatra-naturala.ro/",
-    title1: "NATURAL STONE WEBSITE",
+    github: "https://github.com/Costinnn/car-auction",
+    link: "https://car-auction-five.vercel.app/en",
+    title1: "CAR AUCTION WEBSITE",
     img: p1,
-    title2: "PRACTICING REAL LIFE REACT WEBSITE",
-    text: "The purpose of this project was to highlight the wide range of stone varieties and models. The customer also wanted to focus on showing his work, so I had to deal with a lot of images. For this website I used React, optimized the images to .webp and did some SEO work.",
+    title2: "FULLSTACK APPLICATION WITH REACT AND NEXTJS",
+    text: "A project that I personally liked and from which I learned a lot of new things. From different methods you can use Javascript to create APIs in NEXTjs and filter the database in detail, to authentication errors with NextAuth due to headers overflow. Also, I focused on improving overall app architecture and used URL querys to pass data between components.",
+  },
+  {
+    github: "https://github.com/Costinnn",
+    link: "https://www.shauz.ro/",
+    title1: "NEXTJS ECOMMERCE",
+    img: p5,
+    title2: "NEXTJS FULLSTACK STORE + DASHBOARD",
+    text: "With this project I consolidated my knowledge of React and NextJs by integrating a database in MongoDb that provides a situation of product stocks in real time. The application also contains an administration panel through which new products are added and stocks of products ordered and marked as delivered are reduced.",
   },
   {
     github: "https://github.com/Costinnn/shauz",
@@ -19,7 +28,8 @@ const PROJECTS_DATA = [
     img: p2,
     title2: "FULL MERN STACK APP",
     text: "After quite few projects only on the frontend I was curious to see the big picture for web development, so I wanted to build a fullstack app using MERN stack. After some ups and downs I finally build a custom ecommerce store with admin panel, using React on frontend, Node.js and Express on backend and MongoDb for database.",
-  },{
+  },
+  {
     github: "https://github.com/Costinnn/adoption-website",
     link: "https://adoption-website-xi.vercel.app/",
     title1: "ANIMAL ADOPTION APP",
@@ -29,7 +39,7 @@ const PROJECTS_DATA = [
   },
   {
     github: "https://github.com/Costinnn/Real-time-weather-app",
-    link: "https://test-web-app.ro/",
+    link: "https://weather-cos.netlify.app/",
     title1: "WEATHER APP",
     img: p4,
     title2: "REAL TIME WEATHER INFO USING AN API",

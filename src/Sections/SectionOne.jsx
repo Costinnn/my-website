@@ -5,7 +5,6 @@ import Navbar from "../components/s1components/Navbar";
 
 import "./SectionOne.style.scss";
 
-import portrait from "../assets/s1/portrait.png";
 import active from "../assets/s1/active.gif";
 import message from "../assets/s1/message.png";
 import sleepy from "../assets/s1/sleepy.gif";
@@ -41,7 +40,7 @@ const SectionOne = () => {
         </div>
       </div>
       <Navbar />
-      <img src={portrait} alt="portrait" />
+      <img src="https://i.ibb.co/F5S8j0M/portrait.png" alt="portrait" />
     </div>
   );
 };
